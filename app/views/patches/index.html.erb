@@ -1,0 +1,35 @@
+<h1>Assets</h1>
+<% if !flash[:notice].blank? %>
+   <div class = "alert alert-info">
+      <%= flash[:notice] %>
+   </div>
+<% end %>
+
+<br />
+
+<%= link_to "New Asset", "/patches/new", class: "btn btn-primary" %>
+<br />
+<br />
+
+<table class = "table table-bordered table-striped">
+   <thead>.
+      <tr>
+         <th>Name</th>
+         <th>Download Link</th>
+         <th> </th>
+      </tr>
+   </thead>
+   
+   <tbody>
+      <% @patches.each do |patch| %>
+         
+         <tr>
+            <td><%= patch.name %></td>
+            <td><%= link_to "Download Asset", patch.attachment_url %></td>
+            
+         </tr>
+         
+      <% end %>
+   </tbody>
+   
+</table>

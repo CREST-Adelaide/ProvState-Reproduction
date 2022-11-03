@@ -1,0 +1,12 @@
+
+<div class="container pt-3 border">
+	<h1>Select Group</h1>
+	<%= bootstrap_form_tag url:'/visit_group' do |f|%>
+
+	<% for i in 0..@group_count -1 do %> 
+      	<%= f.radio_button :id, i, label: $contract.call.user_groups(i)[2]%>
+    <% end %> 
+	<%= f.submit "Find"%>
+	<%end%>
+
+</div>

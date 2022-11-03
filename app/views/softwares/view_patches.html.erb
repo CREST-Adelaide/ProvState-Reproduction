@@ -1,0 +1,26 @@
+<a type="button" class="btn btn-success" href="/devices">All Devices</a>
+
+<div class="row">
+	<div class="col">
+	</div>
+	<div class="col">
+		<h1> Available Patches</h1>
+		<table class="table">                         
+		  <tr>                          
+		    <th>Operating System</th>
+		    <th>Software Name</th>
+		    <th>ID</th>
+		    <th>Current State</th>
+		  </tr>
+		   <% @patch_array.each do |patch| %> 
+		     <tr>
+		       <td><%= patch[:operating_system] %></td> 
+		       <td><%= patch[:software_name] %></td>
+		       <td><%= patch[:id] %></td>  
+		       <td><%= patch[:state] %></td>  
+		     </tr>
+		   <% end %>                  
+		</table>             
+		<%= button_to "Back to Device", device_path(params[:id]), method: :get%>
+	</div>
+</div>

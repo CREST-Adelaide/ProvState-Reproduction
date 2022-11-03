@@ -1,0 +1,121 @@
+
+<div class="row">
+   <div class="col">
+   <h1>State Details</h1>
+         <table class="table table-striped table-bordered table-hover">                        
+           <tr>                          
+             <th>Group <%= session[:group] %> </th>
+           </tr>
+              <tr>
+               <th>Group Name:</th> 
+                <td><%= $group_name %></td> 
+              </tr>
+              <tr>
+               <th>Contract Name:</th> 
+               <td><%= $state_name %></td>
+              </tr>
+              <tr>
+               <th>Contract Address:</th> 
+               <td><%= $state_address %></td>  
+              </tr>
+              <tr>
+               <th>Initial State:</th> 
+               <td><%= $state_initial%></td>  
+              </tr>  
+              <tr>
+               <th>Final State:</th> 
+               <td><%= $state_final%></td>  
+              </tr>                
+         </table> 
+   </div>
+   <div class="col">
+   </div>
+   <div class="col">
+   </div>
+</div>
+<br>
+
+<h1> All Assets </h1>
+<table class="table table-striped table-bordered table-hover">                      
+  <tr>                          
+    <th>ID</th>
+    <th>Name</th>
+    <th>Software Name</th>
+    <th>Operating System</th>
+    <th>Current State</th>
+  </tr>
+   <% $asset_array.each do |asset| %> 
+     <tr>
+       <td><%= asset[:id] %></td> 
+       <td><%= asset[:name] %></td> 
+       <td><%= asset[:software_name] %></td>
+       <td><%= asset[:operating_system] %></td>  
+       <td><%= asset[:state] %></td>  
+     </tr>
+   <% end %>                  
+</table> 
+<hr>
+<br>
+
+<div class="row">
+   <div class="col-sm-4">
+      <h2>Transition Asset</h2>
+         <%= bootstrap_form_tag url:'/transition_patch' do |f|%>
+         <%= f.text_field :aid, label: "Asset ID"%>
+         <%= f.text_field :state, label: "Target State"%>
+         <%= f.submit "Save"%>
+         <%end%>
+         <br>
+         <hr>
+   </div>
+   <div class="col">
+    <h2>Available Transitions</h2>
+      <table class="table table-striped table-bordered table-hover"> 
+           <tr>
+             <th>ID</th> 
+             <th>State 1</th> 
+             <th>State 2</th> 
+             <th>Authorised Role</th> 
+           </tr>                      
+           <% $oracle_transitions.each do |transition| %> 
+           <tr>
+             <td><%= transition[:id] %></td> 
+             <td><%= transition[:state1] %></td> 
+             <td><%= transition[:state2] %></td> 
+             <td><%= transition[:role] %></td> 
+           </tr>
+         <% end %>              
+      </table> 
+      <form action="oracle" method="get">
+        <button class="btn btn-dark">Visit Oracle</button>
+      </form>
+      <br>
+      <hr>
+    </div>
+</div>
+<div class="row">
+  
+   <div class="col-sm-4">
+      <h2>Set Initial State</h2>
+         <%= bootstrap_form_tag url:'/state_initial' do |f|%>
+         <%= f.text_field :new_initial, label: "Initial State"%>
+         <%= f.submit "Save"%>
+         <%end%>
+         <br>
+         <hr>
+   </div>
+</div>
+<div class="row">
+  
+   <div class="col-sm-4">
+      <h2>Set Final State</h2>
+         <%= bootstrap_form_tag url:'/state_final' do |f|%>
+         <%= f.text_field :new_final, label: "Final State"%>
+         <%= f.submit "Save"%>
+         <%end%>
+         <br>
+         <hr>
+   </div>
+</div>
+
+

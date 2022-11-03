@@ -1,0 +1,51 @@
+<div class="row">
+	<div class="col">
+		<h1> User List</h1>
+		<table class="table table-striped table-bordered table-hover">                     
+		  <tr>
+		  	<th>Name</th>                          
+		    <th>ID</th>
+		    <th>Address</th>
+		    <th>Role</th>
+		    <th>Action</th>
+		  </tr>
+		   <% @user_list.each do |user| %> 
+		     <tr>
+		       <td><%= user[:name] %></td> 
+		       <td><%= user[:id] %></td>
+		       <td><%= user[:blockchain_address] %></td>  
+		       <td><%= user[:user_role] %></td>  
+		       <td><%= button_to "Add Role", user_path(user[:id]), method: :get%></td> 
+
+
+		     </tr>
+		   <% end %>                  
+		</table>  
+		<%= bootstrap_form_tag url:'/add_user', layout: :inline  do |f|%>
+         <%= f.text_field :address, label: "Add User"%><br>
+         <%= f.submit %>
+         <%end%>    
+         <% flash.each do |type, msg| %>
+		  <div class="alert alert-info">
+		    <%= msg %>
+		  </div>
+		<% end %>       
+	</div>
+	<div class="col">
+		<h1> Role List</h1>
+		<table class="table table-striped table-bordered table-hover">                        
+		  <tr>
+		  	<th>Name</th>                          
+		  </tr>
+		   	<% for i in 0..@total_roles -1 do %> 
+		   	<tr>
+			    <td><%= $state_contract.call.roles(i)%></td>
+			</tr>
+			<% end %>                
+		</table>  
+		<%= bootstrap_form_tag url:'/add_role', layout: :inline  do |f|%>
+         <%= f.text_field :name, label: "Add Role"%><br>
+         <%= f.submit %>
+         <%end%>           
+	</div>
+</div>

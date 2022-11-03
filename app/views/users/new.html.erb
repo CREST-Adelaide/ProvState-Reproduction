@@ -1,0 +1,11 @@
+<div class="container pt-3">
+	<h1>Sign Up</h1>
+	<%= bootstrap_form_for(@user) do |f|%>
+	<%= f.text_field :username%><br>
+	<%= f.password_field :password%><br>
+	<%= f.text_field :address%><br>
+	<%= f.text_field :private_key%><br>
+	<%= f.submit "Submit"%>
+	<%end%>
+</div>
+

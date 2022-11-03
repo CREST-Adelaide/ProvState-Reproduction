@@ -1,0 +1,14 @@
+<div class="container pt-3">
+	<h1>Add Device</h1>
+	<%= bootstrap_form_for(@device) do |f|%>
+	<%= f.text_field :name%><br>
+	<%= f.text_field :host%><br>
+	<%= f.text_field :username%><br>
+	<%= f.text_field :password%><br>
+	<%= f.text_field :operating_system%><br>
+	<%= f.datetime_select :start_time%><br>
+	<%= f.datetime_select :end_time%><br>
+	<%= f.submit "Submit"%>
+	<%end%>
+</div>
+

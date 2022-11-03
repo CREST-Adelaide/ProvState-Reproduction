@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Project8</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </head>
+
+  <body>
+
+    <section> 
+      <nav class="navbar bg-dark navbar-dark navbar-expand-sm">
+        <a class="navbar-brand" href="/welcome"><%= image_tag("crest_logo.png", :alt => "crest logo", size: "150x50") %></a>
+
+          <ul class="navbar-nav ml-auto">
+            <% if group_access? %>
+              <li class="nav-item">
+                <a type="button" class="btn btn-dark nav-link" href="/devices">Devices</a>
+              </li>
+              <li class="nav-item">
+                <a type="button" class="btn btn-dark nav-link" href="/oracle">Oracle</a>
+              </li>
+              <li class="nav-item">
+                <a type="button" class="btn btn-dark nav-link" href="/state">State</a>
+              </li>
+              <li class="nav-item">
+                <a type="button" class="btn btn-dark nav-link" href="/users">Users</a>
+              </li>
+            <%end%>
+            <% if logged_in? %>
+              <li class="nav-item">
+                <a type="button" class="btn btn-dark nav-link" href="/visit_group">Visit Group</a>
+              </li>
+              <li class="nav-item">
+                <a type="button" class="btn btn-dark nav-link" href="/create_group">Create Group</a>
+              </li>
+              <li class="nav-item">
+                <a type="button" class="btn btn-dark nav-link" href="/patches">Assets</a>
+              </li>
+              <li class="nav-item">
+                <%= button_to "Log out", '/logout', method: :delete, :class => "btn btn-dark nav-link" %>
+              </li>
+            <% else %>
+              <li class="nav-item">
+                <a type="button" class="btn btn-dark nav-link" href="/login">Login</a>
+              </li>
+              <li class="nav-item">
+                <a type="button" class="btn btn-dark nav-link" href="/users/new">Sign Up</a>
+              </li>
+              
+            <%end%>
+          </ul>
+
+      </nav> 
+    </section> 
+
+    <section style="padding-top: 30px;">
+      <%= yield %>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,11 @@
+<div class="container pt-3">
+	<h1>Add Software</h1>
+	<%= bootstrap_form_for(@software) do |f|%>
+	<%= f.text_field :name%><br>
+	<%= f.text_field :description%><br>
+	<%= f.text_field :operating_system%><br>
+	<%= f.text_field :install_command%><br>
+	<%= f.submit "Submit"%>
+	<%end%>
+</div>
+

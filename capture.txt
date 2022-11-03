@@ -1,0 +1,1114 @@
+ hayden@NT-20170169:/mnt/c/Users/Admin/Desktop/CREST_RP/truffle-test$ truffle migrate --network kovan
+
+Compiling your contracts...
+===========================
+> Everything is up to date, there is nothing to compile.
+
+
+
+Migrations dry-run (simulation)
+===============================
+> Network name:    'kovan-fork'
+> Network id:      42
+> Block gas limit: 12499988 (0xbebc14)
+
+
+1_initial_migration.js
+======================
+
+   Deploying 'Migrations'
+   ----------------------
+   > block number:        23043872
+   > block timestamp:     1610862490
+   > account:             0x9838a5e2cB634b8852548F0449Fe0A6d116aA232
+   > balance:             5.995576425
+   > gas used:            176943 (0x2b32f)
+   > gas price:           25 gwei
+   > value sent:          0 ETH
+   > total cost:          0.004423575 ETH
+
+   -------------------------------------
+   > Total cost:         0.004423575 ETH
+
+
+2_deploy_manager.js
+===================
+
+   Deploying 'Manager'
+   -------------------
+   > block number:        23043874
+   > block timestamp:     1610862512
+   > account:             0x9838a5e2cB634b8852548F0449Fe0A6d116aA232
+   > balance:             5.9209084
+   > gas used:            2959383 (0x2d2817)
+   > gas price:           25 gwei
+   > value sent:          0 ETH
+   > total cost:          0.073984575 ETH
+
+   -------------------------------------
+   > Total cost:         0.073984575 ETH
+
+
+5_deploy_state.js
+=================
+
+   Deploying 'State'
+   -----------------
+   > block number:        23043876
+   > block timestamp:     1610862539
+   > account:             0x9838a5e2cB634b8852548F0449Fe0A6d116aA232
+   > balance:             5.897193325
+   > gas used:            921265 (0xe0eb1)
+   > gas price:           25 gwei
+   > value sent:          0 ETH
+   > total cost:          0.023031625 ETH
+
+   -------------------------------------
+   > Total cost:         0.023031625 ETH
+
+
+6_deploy_oracle.js
+==================
+
+   Deploying 'Oracle'
+   ------------------
+   > block number:        23043878
+   > block timestamp:     1610862557
+   > account:             0x9838a5e2cB634b8852548F0449Fe0A6d116aA232
+   > balance:             5.8689117
+   > gas used:            1103927 (0x10d837)
+   > gas price:           25 gwei
+   > value sent:          0 ETH
+   > total cost:          0.027598175 ETH
+
+   -------------------------------------
+   > Total cost:         0.027598175 ETH
+
+
+Summary
+=======
+> Total deployments:   4
+> Final cost:          0.12903795 ETH
+
+
+
+
+
+Starting migrations...
+======================
+> Network name:    'kovan'
+> Network id:      42
+> Block gas limit: 12499988 (0xbebc14)
+
+
+1_initial_migration.js
+======================
+
+   Deploying 'Migrations'
+   ----------------------
+   > transaction hash:    0x5d2ce20f19e798016ecccd8e6f24a4dccb751227e28fab33c6e1a64baa8cd7db
+   > Blocks: 1            Seconds: 5
+   > contract address:    0xEEeb568BA54db170336c24463912029552E55f07
+   > block number:        23043887
+   > block timestamp:     1610862580
+   > account:             0x9838a5e2cB634b8852548F0449Fe0A6d116aA232
+   > balance:             5.995201425
+   > gas used:            191943 (0x2edc7)
+   > gas price:           25 gwei
+   > value sent:          0 ETH
+   > total cost:          0.004798575 ETH
+
+
+   > Saving migration to chain.
+   > Saving artifacts
+   -------------------------------------
+   > Total cost:         0.004798575 ETH
+
+
+2_deploy_manager.js
+===================
+
+   Deploying 'Manager'
+   -------------------
+   > transaction hash:    0x2649e1b1fd2ee4b9bbab65c068413adc96fae44eeb5780cf849dbcb857c166f9
+   > Blocks: 2            Seconds: 13
+   > contract address:    0x557bad477DA51AC4088bDef1Cc39f8D4D979FCb5
+   > block number:        23043892
+   > block timestamp:     1610862612
+   > account:             0x9838a5e2cB634b8852548F0449Fe0A6d116aA232
+   > balance:             5.9197834
+   > gas used:            2974383 (0x2d62af)
+   > gas price:           25 gwei
+   > value sent:          0 ETH
+   > total cost:          0.074359575 ETH
+
+
+   > Saving migration to chain.
+   > Saving artifacts
+   -------------------------------------
+   > Total cost:         0.074359575 ETH
+
+
+5_deploy_state.js
+=================
+
+   Deploying 'State'
+   -----------------
+   > transaction hash:    0x4c8afdaa71e122ccfb71416416210b084af27324df19a83b37b1009826a21ccf
+   > Blocks: 1            Seconds: 9
+   > contract address:    0xD4b1A94f57134E72c44F961F173F148B50783Ea1
+   > block number:        23043896
+   > block timestamp:     1610862640
+   > account:             0x9838a5e2cB634b8852548F0449Fe0A6d116aA232
+   > balance:             5.894943325
+   > gas used:            966265 (0xebe79)
+   > gas price:           25 gwei
+   > value sent:          0 ETH
+   > total cost:          0.024156625 ETH
+
+
+   > Saving migration to chain.
+   > Saving artifacts
+   -------------------------------------
+   > Total cost:         0.024156625 ETH
+
+
+6_deploy_oracle.js
+==================
+
+   Deploying 'Oracle'
+   ------------------
+   > transaction hash:    0x7a9f5f26243527d84a9b6f98ec188cbf9e9f0b9a7e3c715389821242cae3278d
+   > Blocks: 1            Seconds: 5
+   > contract address:    0x05cCa86C2D721185B0105089c4e1FA9235CD8A9C
+   > block number:        23043900
+   > block timestamp:     1610862664
+   > account:             0x9838a5e2cB634b8852548F0449Fe0A6d116aA232
+   > balance:             5.8662867
+   > gas used:            1118927 (0x1112cf)
+   > gas price:           25 gwei
+   > value sent:          0 ETH
+   > total cost:          0.027973175 ETH
+
+
+   > Saving migration to chain.
+   > Saving artifacts
+   -------------------------------------
+   > Total cost:         0.027973175 ETH
+
+
+Summary
+=======
+> Total deployments:   4
+> Final cost:          0.13128795 ETH
+
+
+
+hayden@NT-20170169:/mnt/c/Users/Admin/Desktop/CREST_RP/truffle-test$
+
+
+private key == baa68b3b6db96e8748467d05a2cdbdd8b97db1538a0cd8c91ea4bfb0576c2ffc
+
+
+
+hayden@NT-20170169:/mnt/c/Users/Admin/Desktop/CREST_RP/truffle-test$ truffle migrate --reset --network kovan
+
+Compiling your contracts...
+===========================
+> Everything is up to date, there is nothing to compile.
+
+
+
+Migrations dry-run (simulation)
+===============================
+> Network name:    'kovan-fork'
+> Network id:      42
+> Block gas limit: 12487794 (0xbe8c72)
+
+
+1_initial_migration.js
+======================
+
+   Replacing 'Migrations'
+   ----------------------
+   > block number:        23079386
+   > block timestamp:     1611100145
+   > account:             0x9838a5e2cB634b8852548F0449Fe0A6d116aA232
+   > balance:             5.447740231
+   > gas used:            176943 (0x2b32f)
+   > gas price:           25 gwei
+   > value sent:          0 ETH
+   > total cost:          0.004423575 ETH
+
+   -------------------------------------
+   > Total cost:         0.004423575 ETH
+
+
+2_deploy_manager.js
+===================
+
+   Replacing 'Manager'
+   -------------------
+   > block number:        23079388
+   > block timestamp:     1611100174
+   > account:             0x9838a5e2cB634b8852548F0449Fe0A6d116aA232
+   > balance:             5.372562531
+   > gas used:            2979770 (0x2d77ba)
+   > gas price:           25 gwei
+   > value sent:          0 ETH
+   > total cost:          0.07449425 ETH
+
+   -------------------------------------
+   > Total cost:          0.07449425 ETH
+
+
+5_deploy_state.js
+=================
+
+   Replacing 'State'
+   -----------------
+   > block number:        23079390
+   > block timestamp:     1611100205
+   > account:             0x9838a5e2cB634b8852548F0449Fe0A6d116aA232
+   > balance:             5.348847456
+   > gas used:            921265 (0xe0eb1)
+   > gas price:           25 gwei
+   > value sent:          0 ETH
+   > total cost:          0.023031625 ETH
+
+   -------------------------------------
+   > Total cost:         0.023031625 ETH
+
+
+6_deploy_oracle.js
+==================
+
+   Replacing 'Oracle'
+   ------------------
+   > block number:        23079392
+   > block timestamp:     1611100228
+   > account:             0x9838a5e2cB634b8852548F0449Fe0A6d116aA232
+   > balance:             5.320056231
+   > gas used:            1124311 (0x1127d7)
+   > gas price:           25 gwei
+   > value sent:          0 ETH
+   > total cost:          0.028107775 ETH
+
+   -------------------------------------
+   > Total cost:         0.028107775 ETH
+
+
+Summary
+=======
+> Total deployments:   4
+> Final cost:          0.130057225 ETH
+
+
+
+
+
+Starting migrations...
+======================
+> Network name:    'kovan'
+> Network id:      42
+> Block gas limit: 12487782 (0xbe8c66)
+
+
+1_initial_migration.js
+======================
+
+   Replacing 'Migrations'
+   ----------------------
+   > transaction hash:    0xee981169347b76177aad0cc7e52ea92c8429bb57c9e47b50856381bb520982a9
+   > Blocks: 1            Seconds: 6
+   > contract address:    0xBb91F919bEBCA089497031e72981D9E2f58d127B
+   > block number:        23079402
+   > block timestamp:     1611100252
+   > account:             0x9838a5e2cB634b8852548F0449Fe0A6d116aA232
+   > balance:             5.447365231
+   > gas used:            191943 (0x2edc7)
+   > gas price:           25 gwei
+   > value sent:          0 ETH
+   > total cost:          0.004798575 ETH
+
+
+   > Saving migration to chain.
+   > Saving artifacts
+   -------------------------------------
+   > Total cost:         0.004798575 ETH
+
+
+2_deploy_manager.js
+===================
+
+   Replacing 'Manager'
+   -------------------
+   > transaction hash:    0x280aaab5a9e08f1dccd0c02360d4bbf9e72eabd20f07e2a2e1ebdb0fc2091e75
+   > Blocks: 1            Seconds: 10
+   > contract address:    0x94F442f3772148A0311Be1a1B62378DC51A859a0
+   > block number:        23079406
+   > block timestamp:     1611100280
+   > account:             0x9838a5e2cB634b8852548F0449Fe0A6d116aA232
+   > balance:             5.371437531
+   > gas used:            2994770 (0x2db252)
+   > gas price:           25 gwei
+   > value sent:          0 ETH
+   > total cost:          0.07486925 ETH
+
+
+   > Saving migration to chain.
+   > Saving artifacts
+   -------------------------------------
+   > Total cost:          0.07486925 ETH
+
+
+5_deploy_state.js
+=================
+
+   Replacing 'State'
+   -----------------
+   > transaction hash:    0x7fd5d53b7a83cf65dfa2d42f9ac40509bf4c06d9ad15c6eee7f6b466740b8b21
+   > Blocks: 2            Seconds: 6
+   > contract address:    0x36B14BCcDe031a81C4cd0Df488acAa3ec833dA14
+   > block number:        23079410
+   > block timestamp:     1611100304
+   > account:             0x9838a5e2cB634b8852548F0449Fe0A6d116aA232
+   > balance:             5.346597456
+   > gas used:            966265 (0xebe79)
+   > gas price:           25 gwei
+   > value sent:          0 ETH
+   > total cost:          0.024156625 ETH
+
+
+   > Saving migration to chain.
+   > Saving artifacts
+   -------------------------------------
+   > Total cost:         0.024156625 ETH
+
+
+6_deploy_oracle.js
+==================
+
+   Replacing 'Oracle'
+   ------------------
+   > transaction hash:    0x2c21f4292bb2f397d83e6f2283347c5cd330c3577c907a6eba8c7a4c6ec87af2
+   > Blocks: 1            Seconds: 10
+   > contract address:    0x25416F745F99225a59AA25759d000691be0FC629
+   > block number:        23079414
+   > block timestamp:     1611100332
+   > account:             0x9838a5e2cB634b8852548F0449Fe0A6d116aA232
+   > balance:             5.317431231
+   > gas used:            1139311 (0x11626f)
+   > gas price:           25 gwei
+   > value sent:          0 ETH
+   > total cost:          0.028482775 ETH
+
+
+   > Saving migration to chain.
+   > Saving artifacts
+   -------------------------------------
+   > Total cost:         0.028482775 ETH
+
+
+Summary
+=======
+> Total deployments:   4
+> Final cost:          0.132307225 ETH
+
+
+
+hayden@NT-20170169:/mnt/c/Users/Admin/Desktop/CREST_RP/truffle-test$
+
+
+
+
+
+
+
+Starting migrations...
+======================
+> Network name:    'kovan'
+> Network id:      42
+> Block gas limit: 12499988 (0xbebc14)
+
+
+1_initial_migration.js
+======================
+
+   Replacing 'Migrations'
+   ----------------------
+   > transaction hash:    0x90f956f1feec297b3d83b362f8dae27f7c60dad3ee55b6ea5c75a66892f17e87
+   > Blocks: 1            Seconds: 10
+   > contract address:    0x0A9EA798704d0d949AB2d05a9f88D1E1A6A4CC70
+   > block number:        23105681
+   > block timestamp:     1611276160
+   > account:             0x9838a5e2cB634b8852548F0449Fe0A6d116aA232
+   > balance:             5.259092578
+   > gas used:            191943 (0x2edc7)
+   > gas price:           25 gwei
+   > value sent:          0 ETH
+   > total cost:          0.004798575 ETH
+
+
+   > Saving migration to chain.
+   > Saving artifacts
+   -------------------------------------
+   > Total cost:         0.004798575 ETH
+
+
+2_deploy_manager.js
+===================
+
+   Replacing 'Manager'
+   -------------------
+   > transaction hash:    0x07a0ab58a57bb766caf8f6687aac63cc1ed00c73cd23fd1e57ac5931914accf8
+   > Blocks: 2            Seconds: 5
+   > contract address:    0x3d5B1A22046f62842e1f105B6c26dDa6429ffB0e
+   > block number:        23105685
+   > block timestamp:     1611276184
+   > account:             0x9838a5e2cB634b8852548F0449Fe0A6d116aA232
+   > balance:             5.169676953
+   > gas used:            3534287 (0x35edcf)
+   > gas price:           25 gwei
+   > value sent:          0 ETH
+   > total cost:          0.088357175 ETH
+
+
+   > Saving migration to chain.
+   > Saving artifacts
+   -------------------------------------
+   > Total cost:         0.088357175 ETH
+
+
+5_deploy_state.js
+=================
+
+   Replacing 'State'
+   -----------------
+   > transaction hash:    0xbdc85e590738fd9d458653f2d84c2b343f4dc87befc98e8e9b773f05aaeacc88
+   > Blocks: 1            Seconds: 6
+   > contract address:    0x8Acfe30430Ba65B7311FB425ECF67A21c673392A
+   > block number:        23105689
+   > block timestamp:     1611276212
+   > account:             0x9838a5e2cB634b8852548F0449Fe0A6d116aA232
+   > balance:             5.144836878
+   > gas used:            966265 (0xebe79)
+   > gas price:           25 gwei
+   > value sent:          0 ETH
+   > total cost:          0.024156625 ETH
+
+
+   > Saving migration to chain.
+   > Saving artifacts
+   -------------------------------------
+   > Total cost:         0.024156625 ETH
+
+
+6_deploy_oracle.js
+==================
+
+   Replacing 'Oracle'
+   ------------------
+   > transaction hash:    0xbf1ff6a73597765327871b332c75c852cbe99906f0171ff06c56b577191a99ac
+   > Blocks: 1            Seconds: 5
+   > contract address:    0x2aC9bE736db16Fde456A14B5a4ec82557A1A42ae
+   > block number:        23105692
+   > block timestamp:     1611276232
+   > account:             0x9838a5e2cB634b8852548F0449Fe0A6d116aA232
+   > balance:             5.102184478
+   > gas used:            1678758 (0x199da6)
+   > gas price:           25 gwei
+   > value sent:          0 ETH
+   > total cost:          0.04196895 ETH
+
+
+   > Saving migration to chain.
+   > Saving artifacts
+   -------------------------------------
+   > Total cost:          0.04196895 ETH
+
+
+Summary
+=======
+> Total deployments:   4
+> Final cost:          0.159281325 ETH
+
+
+
+hayden@NT-20170169:/mnt/c/Users/Admin/Desktop/CREST_RP/truffle-test$
+
+
+
+
+
+Starting migrations...
+======================
+> Network name:    'kovan'
+> Network id:      42
+> Block gas limit: 12487794 (0xbe8c72)
+
+
+1_initial_migration.js
+======================
+
+   Replacing 'Migrations'
+   ----------------------
+   > transaction hash:    0xfa2665bd8b35188ec648ca5281de722a90ffe0908b1e31327f60ad2ce5a91d51
+   > Blocks: 0            Seconds: 5
+   > contract address:    0x5DC578d18781f86529A149bA90D0CdD4833717b5
+   > block number:        23201863
+   > block timestamp:     1611876524
+   > account:             0x9838a5e2cB634b8852548F0449Fe0A6d116aA232
+   > balance:             4.613088047
+   > gas used:            191943 (0x2edc7)
+   > gas price:           25 gwei
+   > value sent:          0 ETH
+   > total cost:          0.004798575 ETH
+
+
+   > Saving migration to chain.
+   > Saving artifacts
+   -------------------------------------
+   > Total cost:         0.004798575 ETH
+
+
+2_deploy_manager.js
+===================
+
+   Replacing 'Manager'
+   -------------------
+   > transaction hash:    0x0347d8d078362121b03e019190058b5b569a50078e30601dce61959f52ebe556
+   > Blocks: 1            Seconds: 9
+   > contract address:    0x85FCe9B6C8F8F5fEf4F3C047cCABa675EE830dD0
+   > block number:        23201869
+   > block timestamp:     1611876556
+   > account:             0x9838a5e2cB634b8852548F0449Fe0A6d116aA232
+   > balance:             4.510893347
+   > gas used:            4045450 (0x3dba8a)
+   > gas price:           25 gwei
+   > value sent:          0 ETH
+   > total cost:          0.10113625 ETH
+
+
+   > Saving migration to chain.
+   > Saving artifacts
+   -------------------------------------
+   > Total cost:          0.10113625 ETH
+
+
+5_deploy_state.js
+=================
+
+   Replacing 'State'
+   -----------------
+   > transaction hash:    0x2b9f315a9b3007a9938a44dbce6f5e3517519b33ab96b6695298e8be1b81d470
+   > Blocks: 1            Seconds: 9
+   > contract address:    0x70BD3FBcc0975036ef976A021222354F780F3C46
+   > block number:        23201875
+   > block timestamp:     1611876588
+   > account:             0x9838a5e2cB634b8852548F0449Fe0A6d116aA232
+   > balance:             4.473277222
+   > gas used:            1477307 (0x168abb)
+   > gas price:           25 gwei
+   > value sent:          0 ETH
+   > total cost:          0.036932675 ETH
+
+
+   > Saving migration to chain.
+   > Saving artifacts
+   -------------------------------------
+   > Total cost:         0.036932675 ETH
+
+
+6_deploy_oracle.js
+==================
+
+   Replacing 'Oracle'
+   ------------------
+   > transaction hash:    0x73052d5dd2047f6aafbc9e9417ede42ad40ea47382b6a9fda28100598d1bbea8
+   > Blocks: 1            Seconds: 9
+   > contract address:    0x0D39C315fA730385fd6371D20f99dC35e4AacD4E
+   > block number:        23201881
+   > block timestamp:     1611876620
+   > account:             0x9838a5e2cB634b8852548F0449Fe0A6d116aA232
+   > balance:             4.430624822
+   > gas used:            1678758 (0x199da6)
+   > gas price:           25 gwei
+   > value sent:          0 ETH
+   > total cost:          0.04196895 ETH
+
+
+   > Saving migration to chain.
+   > Saving artifacts
+   -------------------------------------
+   > Total cost:          0.04196895 ETH
+
+
+Summary
+=======
+> Total deployments:   4
+> Final cost:          0.18483645 ETH
+
+
+
+Summary
+=======
+> Total deployments:   4
+> Final cost:          0.2109858 ETH
+
+
+
+
+
+Starting migrations...
+======================
+> Network name:    'kovan'
+> Network id:      42
+> Block gas limit: 12499988 (0xbebc14)
+
+
+1_initial_migration.js
+======================
+
+   Replacing 'Migrations'
+   ----------------------
+   > transaction hash:    0xb2cf5a584c27ffbb75642990ac2ad69858e06d796d35ff6d22c370bf977ce75d
+   > Blocks: 1            Seconds: 6
+   > contract address:    0x5B26D7e0a6A7799E1bE4F51D69eED91Ee9849651
+   > block number:        23250209
+   > block timestamp:     1612135168
+   > account:             0x9838a5e2cB634b8852548F0449Fe0A6d116aA232
+   > balance:             4.043613583
+   > gas used:            191943 (0x2edc7)
+   > gas price:           25 gwei
+   > value sent:          0 ETH
+   > total cost:          0.004798575 ETH
+
+
+   > Saving migration to chain.
+   > Saving artifacts
+   -------------------------------------
+   > Total cost:         0.004798575 ETH
+
+
+2_deploy_manager.js
+===================
+
+   Replacing 'Manager'
+   -------------------
+   > transaction hash:    0x8d0152a932cff445f5e33b2016b4b36c0d65c16bd46b35f3b7cd1a3a4cd66cef
+   > Blocks: 2            Seconds: 13
+   > contract address:    0xD73FB40d6D04d32A3e7aE675ACA14399daF7eCa0
+   > block number:        23250214
+   > block timestamp:     1612135196
+   > account:             0x9838a5e2cB634b8852548F0449Fe0A6d116aA232
+   > balance:             3.927094733
+   > gas used:            4618416 (0x4678b0)
+   > gas price:           25 gwei
+   > value sent:          0 ETH
+   > total cost:          0.1154604 ETH
+
+
+   > Saving migration to chain.
+   > Saving artifacts
+   -------------------------------------
+   > Total cost:           0.1154604 ETH
+
+
+5_deploy_state.js
+=================
+
+   Replacing 'State'
+   -----------------
+   > transaction hash:    0xa59077647abf7b173c17d95086803450f1c79c1dc21bdb1064856db4c93a0139
+   > Blocks: 1            Seconds: 9
+   > contract address:    0xFb161c1287F37e0198AC00eeC977bCD212aC28c3
+   > block number:        23250220
+   > block timestamp:     1612135228
+   > account:             0x9838a5e2cB634b8852548F0449Fe0A6d116aA232
+   > balance:             3.875028408
+   > gas used:            2055315 (0x1f5c93)
+   > gas price:           25 gwei
+   > value sent:          0 ETH
+   > total cost:          0.051382875 ETH
+
+
+   > Saving migration to chain.
+   > Saving artifacts
+   -------------------------------------
+   > Total cost:         0.051382875 ETH
+
+
+6_deploy_oracle.js
+==================
+
+   Replacing 'Oracle'
+   ------------------
+   > transaction hash:    0xd821981a6f424f4da260d64aa4dcc32b42d0efa23db018033c24f7f1228823c7
+   > Blocks: 1            Seconds: 10
+   > contract address:    0xDfF075e08a3f4712CdecA92a7b86094b955ccf31
+   > block number:        23250226
+   > block timestamp:     1612135260
+   > account:             0x9838a5e2cB634b8852548F0449Fe0A6d116aA232
+   > balance:             3.832376008
+   > gas used:            1678758 (0x199da6)
+   > gas price:           25 gwei
+   > value sent:          0 ETH
+   > total cost:          0.04196895 ETH
+
+
+   > Saving migration to chain.
+   > Saving artifacts
+   -------------------------------------
+   > Total cost:          0.04196895 ETH
+
+
+Summary
+=======
+> Total deployments:   4
+> Final cost:          0.2136108 ETH
+
+
+
+hayden@NT-20170169:/mnt/c/Users/Admin/Desktop/CREST_RP/truffle-test$
+
+
+1_initial_migration.js
+======================
+
+   Replacing 'Migrations'
+   ----------------------
+   > transaction hash:    0x755f1095e7ae509e0e67ff048a14a370bb5b02efa5db08532becd90674c24d20
+   > Blocks: 2            Seconds: 10
+   > contract address:    0x2Aa5f353590Ba47E7c84a8C88F10DCE5FC9E9a8C
+   > block number:        23302131
+   > block timestamp:     1612415072
+   > account:             0x9838a5e2cB634b8852548F0449Fe0A6d116aA232
+   > balance:             3.526189711
+   > gas used:            191943 (0x2edc7)
+   > gas price:           25 gwei
+   > value sent:          0 ETH
+   > total cost:          0.004798575 ETH
+
+
+   > Saving migration to chain.
+   > Saving artifacts
+   -------------------------------------
+   > Total cost:         0.004798575 ETH
+
+
+2_deploy_manager.js
+===================
+
+   Replacing 'Manager'
+   -------------------
+   > transaction hash:    0x30ad804efc24708081fb7870e44f9e8f50205350a01f8a6dd85ebda28d2fcc51
+   > Blocks: 2            Seconds: 10
+   > contract address:    0x5C563578353a937A2a2A5a8cC0E22bFc7f8cEaf9
+   > block number:        23302136
+   > block timestamp:     1612415100
+   > account:             0x9838a5e2cB634b8852548F0449Fe0A6d116aA232
+   > balance:             3.402427261
+   > gas used:            4908160 (0x4ae480)
+   > gas price:           25 gwei
+   > value sent:          0 ETH
+   > total cost:          0.122704 ETH
+
+
+   > Saving migration to chain.
+   > Saving artifacts
+   -------------------------------------
+   > Total cost:            0.122704 ETH
+
+
+5_deploy_state.js
+=================
+
+   Replacing 'State'
+   -----------------
+   > transaction hash:    0x892ee7f4f6db4f186f3637863eff33c56849db7d3be5552030c5f182a00807cd
+   > Blocks: 2            Seconds: 9
+   > contract address:    0x1181e334f903AC9e9d91571C8e5473D4bCdcd044
+   > block number:        23302142
+   > block timestamp:     1612415132
+   > account:             0x9838a5e2cB634b8852548F0449Fe0A6d116aA232
+   > balance:             3.342190236
+   > gas used:            2382143 (0x24593f)
+   > gas price:           25 gwei
+   > value sent:          0 ETH
+   > total cost:          0.059553575 ETH
+
+
+   > Saving migration to chain.
+   > Saving artifacts
+   -------------------------------------
+   > Total cost:         0.059553575 ETH
+
+
+6_deploy_oracle.js
+==================
+
+   Replacing 'Oracle'
+   ------------------
+   > transaction hash:    0x11e2d4d2a5b07c1c6badf8721eb5ca62d4dfafb005570cd19838c0f18f46d68d
+   > Blocks: 1            Seconds: 9
+   > contract address:    0x47B7A6719F27D2e95e7Ff9E3E5Ef79e514619a16
+   > block number:        23302148
+   > block timestamp:     1612415164
+   > account:             0x9838a5e2cB634b8852548F0449Fe0A6d116aA232
+   > balance:             3.300485861
+   > gas used:            1640837 (0x190985)
+   > gas price:           25 gwei
+   > value sent:          0 ETH
+   > total cost:          0.041020925 ETH
+
+
+   > Saving migration to chain.
+   > Saving artifacts
+   -------------------------------------
+   > Total cost:         0.041020925 ETH
+
+
+Summary
+=======
+> Total deployments:   4
+> Final cost:          0.228077075 ETH
+
+
+
+Starting migrations...
+======================
+> Network name:    'kovan'
+> Network id:      42
+> Block gas limit: 12499988 (0xbebc14)
+
+
+1_initial_migration.js
+======================
+
+   Replacing 'Migrations'
+   ----------------------
+   > transaction hash:    0x8065a24f7dc70789c49684cda110979dfa921a37a1785847ce1c59dabe05f706
+   > Blocks: 1            Seconds: 5
+   > contract address:    0x41087Adc81171B65f2952FC3686b91840bd2AC77
+   > block number:        23364280
+   > block timestamp:     1612748320
+   > account:             0x9838a5e2cB634b8852548F0449Fe0A6d116aA232
+   > balance:             2.351042777
+   > gas used:            191943 (0x2edc7)
+   > gas price:           25 gwei
+   > value sent:          0 ETH
+   > total cost:          0.004798575 ETH
+
+
+   > Saving migration to chain.
+   > Saving artifacts
+   -------------------------------------
+   > Total cost:         0.004798575 ETH
+
+
+2_deploy_manager.js
+===================
+
+   Replacing 'Manager'
+   -------------------
+   > transaction hash:    0x447fba61327a5140d53979a72c3cc4fb530b14f899cf58636e7648b2592d3676
+   > Blocks: 1            Seconds: 10
+   > contract address:    0x1c1DAF02966945287E50817ad989E28da32c9111
+   > block number:        23364285
+   > block timestamp:     1612748348
+   > account:             0x9838a5e2cB634b8852548F0449Fe0A6d116aA232
+   > balance:             2.225308427
+   > gas used:            4987036 (0x4c189c)
+   > gas price:           25 gwei
+   > value sent:          0 ETH
+   > total cost:          0.1246759 ETH
+
+
+   > Saving migration to chain.
+   > Saving artifacts
+   -------------------------------------
+   > Total cost:           0.1246759 ETH
+
+
+5_deploy_state.js
+=================
+
+   Replacing 'State'
+   -----------------
+   > transaction hash:    0x7f6fb193d090cf5215bc6034fcd1caaf23cb8ad59982ac376359f26673d5803d
+   > Blocks: 1            Seconds: 13
+   > contract address:    0xEd763aB3BF883a42ad2d11028bF4fb92fC829Ff4
+   > block number:        23364291
+   > block timestamp:     1612748380
+   > account:             0x9838a5e2cB634b8852548F0449Fe0A6d116aA232
+   > balance:             2.163948752
+   > gas used:            2427049 (0x2508a9)
+   > gas price:           25 gwei
+   > value sent:          0 ETH
+   > total cost:          0.060676225 ETH
+
+
+   > Saving migration to chain.
+   > Saving artifacts
+   -------------------------------------
+   > Total cost:         0.060676225 ETH
+
+
+6_deploy_oracle.js
+==================
+
+   Replacing 'Oracle'
+   ------------------
+   > transaction hash:    0x0be5a6b95a217ca6cae98a0f39a0216843ea40cc8284cc1759bea24c4fecb02d
+   > Blocks: 1            Seconds: 9
+   > contract address:    0xbcFA8e2bA3AF27Eb73ebc5337b86F580E5C2f332
+   > block number:        23364297
+   > block timestamp:     1612748412
+   > account:             0x9838a5e2cB634b8852548F0449Fe0A6d116aA232
+   > balance:             2.121395402
+   > gas used:            1674796 (0x198e2c)
+   > gas price:           25 gwei
+   > value sent:          0 ETH
+   > total cost:          0.0418699 ETH
+
+
+   > Saving migration to chain.
+   > Saving artifacts
+   -------------------------------------
+   > Total cost:           0.0418699 ETH
+
+
+Summary
+=======
+> Total deployments:   4
+> Final cost:          0.2320206 ETH
+
+
+
+hayden@NT-20170169:/mnt/c/Users/Admin/Desktop/CREST_RP/truffle-test$
+
+
+
+
+
+
+Starting migrations...
+======================
+> Network name:    'kovan'
+> Network id:      42
+> Block gas limit: 12499988 (0xbebc14)
+
+
+1_initial_migration.js
+======================
+
+   Replacing 'Migrations'
+   ----------------------
+   > transaction hash:    0xfe9f4f5150288c94b30fa65bf3f5f0e9c5dda6e4528fd08e489e51ed504c5d5c
+   > Blocks: 1            Seconds: 5
+   > contract address:    0xF46D171345e70F5eB8e55C1fe549895d6f877bd5
+   > block number:        23368644
+   > block timestamp:     1612771664
+   > account:             0x9838a5e2cB634b8852548F0449Fe0A6d116aA232
+   > balance:             3.65845484
+   > gas used:            191943 (0x2edc7)
+   > gas price:           25 gwei
+   > value sent:          0 ETH
+   > total cost:          0.004798575 ETH
+
+
+   > Saving migration to chain.
+   > Saving artifacts
+   -------------------------------------
+   > Total cost:         0.004798575 ETH
+
+
+2_deploy_manager.js
+===================
+
+   Replacing 'Manager'
+   -------------------
+   > transaction hash:    0x053986e2544461b68413d71e4c22799a51ae4f4132b790aa2c4df5dd8f013a20
+   > Blocks: 1            Seconds: 9
+   > contract address:    0x3D143Dea16BB7EECF4E24F3B4e348F3578cA26D9
+   > block number:        23368649
+   > block timestamp:     1612771692
+   > account:             0x9838a5e2cB634b8852548F0449Fe0A6d116aA232
+   > balance:             3.53272049
+   > gas used:            4987036 (0x4c189c)
+   > gas price:           25 gwei
+   > value sent:          0 ETH
+   > total cost:          0.1246759 ETH
+
+
+   > Saving migration to chain.
+   > Saving artifacts
+   -------------------------------------
+   > Total cost:           0.1246759 ETH
+
+
+5_deploy_state.js
+=================
+
+   Replacing 'State'
+   -----------------
+   > transaction hash:    0xceae70cdc4dac84db6a3c7bab17d467455fb6c7e01dbf9823805d6a8bc82ee54
+   > Blocks: 1            Seconds: 9
+   > contract address:    0x5DdCd6C0c5603580608912240611F3a4fbC6286a
+   > block number:        23368655
+   > block timestamp:     1612771724
+   > account:             0x9838a5e2cB634b8852548F0449Fe0A6d116aA232
+   > balance:             3.471360815
+   > gas used:            2427049 (0x2508a9)
+   > gas price:           25 gwei
+   > value sent:          0 ETH
+   > total cost:          0.060676225 ETH
+
+
+   > Saving migration to chain.
+   > Saving artifacts
+   -------------------------------------
+   > Total cost:         0.060676225 ETH
+
+
+6_deploy_oracle.js
+==================
+
+   Replacing 'Oracle'
+   ------------------
+   > transaction hash:    0x2d35ac366eafc295df18d0435419873c6d0dbbc98f16e8b6495c08db4650761b
+   > Blocks: 1            Seconds: 9
+   > contract address:    0xD05B990Cb3C534a74248007902c99c168b96961D
+   > block number:        23368661
+   > block timestamp:     1612771756
+   > account:             0x9838a5e2cB634b8852548F0449Fe0A6d116aA232
+   > balance:             3.428807465
+   > gas used:            1674796 (0x198e2c)
+   > gas price:           25 gwei
+   > value sent:          0 ETH
+   > total cost:          0.0418699 ETH
+
+
+   > Saving migration to chain.
+   > Saving artifacts
+   -------------------------------------
+   > Total cost:           0.0418699 ETH
+
+
+Summary
+=======
+> Total deployments:   4
+> Final cost:          0.2320206 ETH
+
+
+
+hayden@NT-20170169:/mnt/c/Users/Admin/Desktop/CREST_RP/truffle-test$
+
+
+
+MANAGER = 0x0ba35A617586a94631314e2C2a28748F75C3Ba30
+
+
+
+MANAGER = 0xFdd44443a79DaFf2B384608C6725ea1f325d0843

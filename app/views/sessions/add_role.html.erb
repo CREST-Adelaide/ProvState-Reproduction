@@ -1,0 +1,22 @@
+<div class="container pt-3">
+	<div>
+		<h1> Select Role</h1>
+		<table class="table">                         
+		  <tr>
+		  	<th>Name</th>                          
+		  </tr>            
+		
+		<%= bootstrap_form_tag url:'/add_role', layout: :inline  do |f|%>
+		<% for i in 0..@total_roles -1 do %> 
+		   <tr>
+			    <td><%= $state_contract.call.roles(i)%>
+			    	<%= f.check_box :role_id, {}, i, hide_label: true%><br>
+			    </td>
+			</tr>	
+         <% end %>  
+         <%= f.submit %>
+         <%end%>  
+         </table>           
+	</div>
+
+</div>
